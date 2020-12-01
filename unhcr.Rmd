@@ -2,7 +2,7 @@
 title: "Flow Data from UNHCR"
 author: "Connor Kelly"
 date: "11/24/2020"
-output: rmarkdown::github_document
+output: html_document
 ---
 
 ```{r message=FALSE}
@@ -114,7 +114,6 @@ flow_dest <- flow %>% filter(
                 "Nigeria", "Somalia", "Guatemala", "Venezuela (Bolivarian Republic of)"))
 flow_dest <- flow_dest[, c(2, 1, 3:61)]
 
-# Start by looking at asylum seekers and refugees separately, later combine
 # Asylum Seekers
 
 # Looks like I'll have to do this country by country, less elegant than when only looking at origin
